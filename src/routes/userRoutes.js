@@ -3,4 +3,5 @@ const router=express.Router();
 const userController=require("../controllers/userController")
 router.post("/register",userController.userRegister)
 router.post("/login",userController.userLoginController)
+router.post("/logout",userController.userLogoutController)
 module.exports=router;
